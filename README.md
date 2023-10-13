@@ -30,6 +30,49 @@ The primary purpose of the application is to demonstrate the implementation of a
 `java -jar target/airport-simulation.jar`
 1. Follow the on-screen instructions to interact with the simulation.
 
+#### Usage
+
+##### Commands
+
+###### Add
+
+**_Rule_**: If a new flight is added.
+
+**_Action_**: Add the new flight with its scheduled time to the flight schedule.
+
+**_Format_**: Enter the flight number, flight type (_**arrival/departure**_), and scheduled time in the format _**year/month/day/time/minutes**_.
+
+###### Change
+
+**_Rule_**: If the scheduled time of a flight is changed.
+
+_**Action**_: Update the scheduled time of the specified flight to the new time.
+
+**_Format_**: Enter the flight number and the new estimated time in the format _**year/month/day/time/minutes**_.
+
+###### Cancel
+
+**_Rule_**: If a flight is canceled.
+
+**_Action_**: Remove the specified flight from the flight schedule.
+
+**_Format_**: Enter the flight number.
+
+###### Stop
+
+**_Rule_**: If the process is stopped.
+
+**_Action_**: Stop the execution of the flight scheduling process.
+
+###### Configuration
+
+_Number of Gates:_ Enter the number of gates (should be more than 1).
+_Number of Runways:_ Enter the number of runways (should be more than 1)
+
+#### Result of Simulation
+
+The final information of flights is saved in the **_src/main/java/ResultOfSimulation_** file.
+
 ### Application Structure
 
 The application is structured as follows:
